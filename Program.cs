@@ -6,7 +6,8 @@ namespace Maximum_Generics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Console.WriteLine($"Maximum number = {Test_Maximum.IntMaxnum(5, 9, 8)}");
         }
     }
 }
