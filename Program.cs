@@ -8,6 +8,7 @@ namespace Maximum_Generics
         {
 
             Console.WriteLine($"Maximum number = {Test_Maximum.IntMaxnum(5, 9, 8)}");
+            Console.WriteLine($"Maximum number = {Test_Maximum.floatMaxnum(5.5f, 9.7f, 8.9f)}");
         }
     }
 }
