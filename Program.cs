@@ -1,19 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Maximum_Generics
 {
     internal class Program
     {
         static void Main(string[] args)
-        {
-
-            //Console.WriteLine($"Maximum number = {Test_Maximum.IntMaxnum(5, 9, 8)}");
-            //Console.WriteLine($"Maximum number = {Test_Maximum.floatMaxnum(5.5f, 9.7f, 8.9f)}");
-            //Console.WriteLine($"Maximum String = {Test_Maximum.stringMaxnum("A", "b", "C")}");
-            Test_Maximum <int> _Maximum = new Test_Maximum<int>();
-            Console.WriteLine($"Maximum = {_Maximum.Maximum(4,7,9)}");
-
-
+        {     
+           Test_Maximum<double> _Maximum = new Test_Maximum<double>();
+           Console.WriteLine(_Maximum.Maximum(2.5, 5.5, 7.6, 6.5, 7.9, 9.9));
         }
+     
     }
 }
